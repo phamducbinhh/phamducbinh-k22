@@ -1,0 +1,366 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+.header-left{
+    display: flex;
+}
+.header-left div{
+    padding: 12px 24px;
+}
+.header{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+.header-left div:hover{
+    background: #ccc;
+    color: white;
+    cursor: pointer;
+}
+.header-right{
+    padding: 12px 24px;
+}
+.header-right:hover{
+    background: red;
+    cursor: pointer;
+}
+.menu{
+    position: relative;
+    z-index: 1;
+}
+.menu ul{
+    position: absolute;
+    background: burlywood;
+    list-style: none;
+    left: 0;
+    top:100%;
+    display: none;
+    min-width: 160px;
+}
+.menu ul li{
+    padding: 8px 16px;
+}
+.menu ul li:hover{
+    background: #ccc;
+
+}
+.menu:hover ul{
+    display: block;
+}
+.banner{
+    position: relative;
+    text-align: center;
+}
+.banner-text{
+    position: absolute;
+    padding: 32px 16px;
+    bottom: 0;
+    color: white;
+    width: 100%;
+}
+.intro{
+    max-width: 800px;
+    margin: auto;
+    padding: 64px 16px;
+}
+.intro-text h1,.title{
+    text-align: center;
+}
+.intro-text p {
+    text-align: justify;
+}
+.intro-text h1{
+    margin: 10px 0;
+}
+.intro-text .title{
+    margin: 15px 0;
+    text-align: center;
+}
+.intro-list{
+    display: flex;
+    justify-content: space-around;
+    padding: 32px 0;
+}
+.intro-list div{
+    align-items: center;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.intro-list div img{
+    width:60%;
+    border-radius: 2px;
+}
+.content{
+    background: black;
+}
+.style{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 64px;
+}
+.ticket{
+    font-size: 15px;
+    margin: 20px;
+    color: #666;
+    text-align: center;
+}
+.time{
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    background: white;
+    max-width: 768px;
+    margin: auto;
+    
+}
+.date div{
+    display: flex;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    max-width: 768px;
+    align-items: center;
+}
+.date div p{
+    margin-left: 16px;
+    padding: 0 8px;
+    background: #f44336;
+    color: white;
+    height: 22px;
+    display: flex;
+    align-items: center;
+}
+.november{
+    display: flex;
+    align-items: center;
+    height: 36px;
+    justify-content: space-between;
+}
+.number{
+    width: 22.5px !important;
+    height: 24.7px !important;
+    text-align: center;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    background: #000;
+    color: white;
+    align-items: center;
+    margin-right: 10px;
+}
+.city{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    padding: 32px 0 100px 0;
+    max-width: 768px;
+}
+.box img{
+    width:100%;
+}
+.box img:hover{
+    filter: brightness(50%);
+    cursor: pointer;
+}
+.box{
+    background: white;
+    margin-bottom: 16px;
+    width: 31%;
+}
+.box div {
+    width:100%;
+    padding: 8px 16px;
+}
+.buy{
+    margin-bottom: 5px;
+}
+.buy div{
+    color: white;
+    background: #000;
+    width: 110px;
+    height: 38px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px !important;
+}
+.sider{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 18px!important;
+    height: 83px;
+    margin: 0 0 16px;
+
+}
+.left i{
+    padding-right: 20px;
+    font-size: 18px;
+}
+.top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.right input {
+    padding: 8px;
+    height: 40.5px;
+    width: 184px;
+    border: 1px solid #ccc;
+}
+.bot input{
+    width: 100% !important;
+}
+.contact{
+    max-width: 800px;
+    margin: auto;
+    padding: 64px 16px;
+    
+}
+.title{
+    margin: 15px 0 !important;
+}
+.click p{
+    background: #000;
+    color: white;
+    width: 77.31px;
+    height: 38.5px;
+    border: none;
+    padding: 10px 16px;
+    margin: 16px 0;
+    float: right;
+}
+.click p:hover{
+    background: #ccc;
+    color: black;
+    cursor: pointer;
+}
+.footer{
+    padding: 64px 16px;
+}
+.footer div{
+    text-align: center;
+}
+.text {
+    margin: 16px;
+    font-size: 15px;
+    color: #666666;
+}
+.mobile{
+    display: none;
+}
+.dropdown{
+    padding: 12px 24px;
+}
+
+.dropdown-menu{
+    transform: translate3d(-0, 0px, 0px) !important;
+    inset: unset !important;
+    right: 0 !important;
+    top: 100% !important;
+    width: 100vw;
+    background: black;
+}
+.dropdown-item{
+    color: white;
+    padding: 12px 24px;
+}
+.BuyTickits{
+    background: black;
+    color: white;
+    padding: 8px 16px;
+}
+.BuyTickits:hover{
+    background: #ccc;
+    cursor: pointer;
+    color: black;
+}
+.modal-header.btn-close{
+    margin: 0;
+}
+.modal-header{
+    flex-direction: column-reverse;
+    background: #009688;
+    color: white;
+}
+.closeModal{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.modal-body p{
+    margin: 15px 0;
+}
+.modal-body input{
+    padding: 8px;
+    width: 100%;
+}
+.pay{
+    margin: 16px 0px;
+    padding: 16px;
+    background: #009688;
+    width: 100%;
+    color: white;
+    font: 15px;
+}
+.modal-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.modal-footer button{
+    background: #f44336;
+}
+
+
+
+
+
+/* responsive */
+@media only screen and (max-width :600px) {
+    body{
+        color: rgb(141, 119, 119);
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .intro-list,.city{
+        flex-direction: column;
+        align-items: center;
+    }
+    .city{
+        padding: 0 8px;
+    }
+    .box, .top input{
+        width: 100%;
+        /* padding: 0 8px; */
+    }
+    .top, .sider{
+        flex-direction: column; 
+    }
+    .header-right{
+        padding: 0;
+    }
+}
